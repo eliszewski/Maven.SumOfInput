@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Enter a number:");
         Scanner input = new Scanner(System.in);
         int number = input.nextInt();
-        System.out.println("Sum is " +sumOfNumbers(number));
+        System.out.println("Sum is " +sumOfNumbers(number)+ " " + gaussianSumOfNumbers(number));
     }
     
     public static int sumOfNumbers(int n) {
@@ -22,8 +22,8 @@ public class Main {
     }
     
     // for Extra Credit
-    int gaussianSumOfNumbers(int n) {
-        return 0;
+    public static int gaussianSumOfNumbers(int n) {
+        return (n *(n+1)/2);
     }
    
     // for Extra extra credit - compare the methods and show which one is faster
